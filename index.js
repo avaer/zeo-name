@@ -7,7 +7,9 @@ function _capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-module.exports = function(s = String(Math.random())) {
+module.exports = function(s) {
+  s = s || String(Math.random());
+
   const adjective = adjectives[Math.floor(murmur(s + ':adjective') / 0xFFFFFFFF  * adjectives.length)];
   const animal = animals[Math.floor(murmur(s + ':adjective') / 0xFFFFFFFF * animals.length)];
   return _capitalize(adjective) + ' ' + _capitalize(animal);
