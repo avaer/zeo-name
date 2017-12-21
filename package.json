@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/modulesio/zeo-name/issues"
   },
-  "homepage": "https://github.com/modulesio/zeo-name#readme"
+  "homepage": "https://github.com/modulesio/zeo-name#readme",
+  "dependencies": {
+    "murmurhash": "0.0.2"
+  }
 }
